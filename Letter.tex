@@ -1,17 +1,21 @@
-\documentclass{MyLetter}
-\signature{F. M. Last}
-\address{Number Street \\ City Postcode}
-\longindentation=0pt
+\documentclass[10pt,a4paper]{MyLetter}
+
 \begin{document}
 
-\begin{letter}{Name \\ Number Street \\ Town Postcode}
-\opening{Dear Sir or Madam}
+\fontfamily{lmr}\selectfont
+
+\originaddress{Number Street}{Town Postcode}
+
+\destinationaddress{Number Street}{City Postcode}
+
+\greeting{Dear Sir or Madam,}
 
 Lorem ipsum dolor sit amet.
 
-I look forward to your reply.
+I look forward to your reply.\\
 
 \closing{Yours Faithfully,}
 
-\end{letter}
+\signature{F. M. Last}
+
 \end{document}
