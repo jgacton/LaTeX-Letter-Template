@@ -21,21 +21,26 @@
 \pagestyle{empty}
 
 \newcommand{\originaddress}[2]{
-    \hfill \stackengine{\stackgap}{#2}{#1}{O}{r}{\quietstack}{\useanchorwidth}{\stacktype}\\
+    \hfill \stackengine{\stackgap}{#2}{#1}{O}{r}{\quietstack}{\useanchorwidth}{\stacktype}%
+    \vspace{\baselineskip}%
 }
 
 \newcommand{\destinationaddress}[2]{
-    \stackengine{\stackgap}{#2}{#1}{O}{l}{\quietstack}{\useanchorwidth}{\stacktype}\\
+    \stackengine{\stackgap}{#2}{#1}{O}{l}{\quietstack}{\useanchorwidth}{\stacktype}%
+    \vspace{\baselineskip}%
 }
 
 \newcommand{\greeting}[1]{
-    #1\\
+    #1%
+    \vspace{\baselineskip}%
 }
 
 \newcommand{\closing}[1]{
-    #1\\
+    \vspace{\baselineskip}%
+    #1%
+    \vspace{\baselineskip}%
 }
 
 \newcommand{\signature}[1]{
-    #1\\
+    #1%
 }
