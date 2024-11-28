@@ -19,6 +19,7 @@
 }
 
 \pagestyle{empty}
+\setlength{\parindent}{0pt}
 
 \newcommand{\originaddress}[2]{
     \hfill \stackengine{\stackgap}{#2}{#1}{O}{r}{\quietstack}{\useanchorwidth}{\stacktype}%
@@ -27,6 +28,11 @@
 
 \newcommand{\destinationaddress}[2]{
     \stackengine{\stackgap}{#2}{#1}{O}{l}{\quietstack}{\useanchorwidth}{\stacktype}%
+    \vspace{\baselineskip}%
+}
+
+\newcommand{\dateofwriting}[1]{
+    \hfill #1%
     \vspace{\baselineskip}%
 }
 
